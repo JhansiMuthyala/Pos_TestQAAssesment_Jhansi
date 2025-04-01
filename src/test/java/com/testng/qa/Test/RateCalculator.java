@@ -29,7 +29,8 @@ public class RateCalculator {
    @BeforeTest
     public void OpenBrowser() {
         ChromeOptions options = new ChromeOptions();
-        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+//       options.addArguments("--headless"); // Run Chrome in headless mode
+       options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         //options.addArguments("--guest");
         driver = new ChromeDriver(options);
       log.info("Initiated Chrome Browser");
@@ -86,16 +87,17 @@ public class RateCalculator {
         log.info("Clicked on Calculate Button");
 
         // Step 7: Wait for quotes to be displayed
-        List<WebElement> quotesList = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div/dt[contains(text(),'Service Type')]"))); // Adjust selector if needed
+        List<WebElement> quotesList = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//h3[contains(text(), 'RM')]"))); // Adjust selector if needed
 
         // Step 8: Assert that multiple quotes are displayed
         Assert.assertTrue(quotesList.size() > 1, "Multiple shipping quotes should be displayed!");
         log.info("Verified that multiple quotes are displayed");
-
+        // Print the number of results found
+        System.out.println("Number of Quotations displayed: " + quotesList.size());
         // Print the available quotes
         log.info("Shipping Quotes:");
         for (WebElement quote : quotesList) {
-            log.info(quote.getText());
+            log.info("Quotation: "+quote.getText());
         }
     }
 
