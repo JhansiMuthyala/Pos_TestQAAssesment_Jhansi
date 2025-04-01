@@ -9,6 +9,7 @@ for guest role in browser is also commented in the code (RateCalculator.class)
 
 # Run Test Cases:
 Run testNG.xml file or execute RateCalculator.class from IDE 
+
 For Allure reports run cmd: Allure serve allure-results (open cmd from project path)
 
 
