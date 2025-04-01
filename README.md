@@ -1,11 +1,14 @@
 # TestQAAssesment
 API and Automation test Assesment Selenium Automation TestSuite(with Java) Author - Jhansi Muthyala
 
-Java, Selenium, TestNG Maven, AssertJ Allure Report
+Maven Required Depedencies : 
+Java, Selenium, TestNG , AssertJ, Allure Report
 
-API Collection Run Collection : "QA test Collection.postman_collection.json" Environment Collection : "EnvironmentQA.postman_environment.json"
+Note : for headless browser commented in code. (RateCalculator.class)
 
 For Allure reports run cmd: Allure serve allure-results (open cmd from project path)
 
-Collections and reamdme.md in Main branch
-Selenium Project in Master Branch
+
+# Additional Notes
+The Postman collection can be found inside the postman-collection folder
+API Collection - Run Collection : "QA test Collection.postman_collection.json" Environment Collection : "EnvironmentQA.postman_environment.json"
