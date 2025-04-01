@@ -10,5 +10,5 @@ For Allure reports run cmd: Allure serve allure-results (open cmd from project p
 
 
 # Additional Notes
-The Postman collection can be found inside the postman-collection folder
+The Postman collection can be found inside the postman-collection folder.
 API Collection - Run Collection : "QA test Collection.postman_collection.json" Environment Collection : "EnvironmentQA.postman_environment.json"
