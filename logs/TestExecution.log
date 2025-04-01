@@ -1,0 +1,31 @@
+2025-04-01 16:58:17 [main] INFO  com.testng.qa.Utilities.Utility - Log4j2 has been initialized successfully!
+2025-04-01 16:58:17 [main] INFO  com.testng.qa.Base.TestBase - Suite Execution Started
+2025-04-01 16:58:20 [main] INFO  com.testng.qa.Test.RateCalculator - Initiated Chrome Browser
+2025-04-01 16:58:25 [main] INFO  com.testng.qa.Test.RateCalculator - Navigated to URL rateCalculator
+2025-04-01 16:58:28 [main] INFO  com.testng.qa.Test.RateCalculator - Cleared existing value in 'To Country' field
+2025-04-01 16:58:30 [main] INFO  com.testng.qa.Test.RateCalculator - Entered 'India' in 'To Country' field
+2025-04-01 16:58:31 [main] INFO  com.testng.qa.Test.RateCalculator - Selected 'India - IN' from dropdown
+2025-04-01 16:58:31 [main] INFO  com.testng.qa.Test.RateCalculator - Entered From PostCode
+2025-04-01 16:58:31 [main] INFO  com.testng.qa.Test.RateCalculator - Entered Item Weight
+2025-04-01 16:58:33 [main] INFO  com.testng.qa.Test.RateCalculator - Clicked on Calculate Button
+2025-04-01 16:58:34 [main] INFO  com.testng.qa.Base.TestBase - Test failed for testcaseVerifyRateCalculatorScreen
+2025-04-01 16:58:34 [main] INFO  com.testng.qa.Base.TestBase - <------ Test Method failed Exit Method ---------->
+2025-04-01 16:58:34 [main] INFO  com.testng.qa.Test.RateCalculator - Closed Browser
+2025-04-01 16:58:34 [main] INFO  com.testng.qa.Test.RateCalculator - <------ Completed Execution ---------->
+2025-04-01 16:59:47 [main] INFO  com.testng.qa.Utilities.Utility - Log4j2 has been initialized successfully!
+2025-04-01 16:59:47 [main] INFO  com.testng.qa.Base.TestBase - Suite Execution Started
+2025-04-01 16:59:50 [main] INFO  com.testng.qa.Test.RateCalculator - Initiated Chrome Browser
+2025-04-01 16:59:54 [main] INFO  com.testng.qa.Test.RateCalculator - Navigated to URL rateCalculator
+2025-04-01 16:59:58 [main] INFO  com.testng.qa.Test.RateCalculator - Cleared existing value in 'To Country' field
+2025-04-01 17:00:00 [main] INFO  com.testng.qa.Test.RateCalculator - Entered 'India' in 'To Country' field
+2025-04-01 17:00:00 [main] INFO  com.testng.qa.Test.RateCalculator - Selected 'India - IN' from dropdown
+2025-04-01 17:00:00 [main] INFO  com.testng.qa.Test.RateCalculator - Entered From PostCode
+2025-04-01 17:00:00 [main] INFO  com.testng.qa.Test.RateCalculator - Entered Item Weight
+2025-04-01 17:00:03 [main] INFO  com.testng.qa.Test.RateCalculator - Clicked on Calculate Button
+2025-04-01 17:00:03 [main] INFO  com.testng.qa.Test.RateCalculator - Verified that multiple quotes are displayed
+2025-04-01 17:00:03 [main] INFO  com.testng.qa.Test.RateCalculator - Shipping Quotes:
+2025-04-01 17:00:03 [main] INFO  com.testng.qa.Test.RateCalculator - Quotation: RM 676.50
+2025-04-01 17:00:03 [main] INFO  com.testng.qa.Test.RateCalculator - Quotation: RM 585.60
+2025-04-01 17:00:03 [main] INFO  com.testng.qa.Test.RateCalculator - Quotation: RM 421.00
+2025-04-01 17:00:04 [main] INFO  com.testng.qa.Test.RateCalculator - Closed Browser
+2025-04-01 17:00:04 [main] INFO  com.testng.qa.Test.RateCalculator - <------ Completed Execution ---------->

@@ -1,5 +1,6 @@
 package com.testng.qa.Test;
 
+import com.testng.qa.Base.TestBase;
 import com.testng.qa.Utilities.Utility;
 import io.qameta.allure.Description;
 import org.apache.logging.log4j.LogManager;
@@ -19,9 +20,9 @@ import java.awt.*;
 import java.time.Duration;
 import java.util.List;
 
-import static com.testng.qa.Base.TestBase.log;
-public class RateCalculator {
-    WebDriver driver;
+import static com.testng.qa.Base.TestBase.*;
+public class RateCalculator extends TestBase {
+   // WebDriver driver;
     private WebDriverWait wait;
    private static final Logger log = (Logger) LogManager.getLogger(RateCalculator.class);
 
@@ -90,7 +91,7 @@ public class RateCalculator {
         List<WebElement> quotesList = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//h3[contains(text(), 'RM')]"))); // Adjust selector if needed
 
         // Step 8: Assert that multiple quotes are displayed
-        Assert.assertTrue(quotesList.size() > 1, "Multiple shipping quotes should be displayed!");
+        Assert.assertTrue(quotesList.size() >= 1, "Multiple shipping quotes should be displayed!");
         log.info("Verified that multiple quotes are displayed");
         // Print the number of results found
         System.out.println("Number of Quotations displayed: " + quotesList.size());

@@ -1,23 +1,23 @@
 package com.testng.qa.Base;
 
 import com.testng.qa.Utilities.Utility;
+import org.apache.logging.log4j.LogManager;
+
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-import java.awt.*;
-import java.util.logging.Logger;
 
 public class TestBase {
     public static WebDriver driver;
-    public static Logger log;
+    public static Logger log = LogManager.getLogger(TestBase.class);
 
 //calling the Log4j
 
     @BeforeSuite
-    public void setLog4j() throws AWTException {
+    public void setLog4j() throws Exception {
 
         Utility.ConfigureLog4j();
         System.out.println("Before Suite");
