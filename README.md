@@ -2,10 +2,13 @@
 API and Automation test Assesment Selenium Automation TestSuite(with Java) Author - Jhansi Muthyala
 
 Maven Required Depedencies : 
-Java, Selenium, TestNG , AssertJ, Allure Report
+Java, Selenium, TestNG , AssertJ, Allure Report, Log4j2
 
 Note : for headless browser commented in code. (RateCalculator.class)
+for guest role in browser is also commented in the code (RateCalculator.class)
 
+# Run Test Cases:
+Run testNG.xml file or execute RateCalculator.class from IDE 
 For Allure reports run cmd: Allure serve allure-results (open cmd from project path)
 
 
